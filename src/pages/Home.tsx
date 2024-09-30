@@ -1,7 +1,5 @@
 import LeadCaptureForm from "./Form";
 
-
-
 export default function Home() {
   return (
     <div className="">
