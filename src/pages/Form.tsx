@@ -100,6 +100,15 @@ const LeadCaptureForm: React.FC = () => {
           <option value="Startups e Empresas de Tecnologia" className="">Startups e Empresas de Tecnologia</option>
           <option value="Saúde e Bem-estar" className="">Saúde e Bem-estar</option>
           <option value="Educação e Cursos Online" className="">Educação e Cursos Online</option>
+          <option value="Food Service" className="">Food Service</option>
+          <option value="E-commerce" className="">E-commerce</option>
+          <option value="Indústria" className="">Indústria</option>
+          <option value="Varejo" className="">Varejo</option>
+          <option value="Serviços" className="">Serviços</option>
+          <option value="Imobiliária" className="">Imobiliária</option>
+          <option value="SAAS" className="">SAAS</option>
+          <option value="Finanças" className="">Finanças</option>
+          <option value="Energia Solar" className="">Energia Solar</option>
           <option value="Outro" className="">Outro</option>
         </select>
         <button
