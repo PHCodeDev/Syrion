@@ -61,7 +61,7 @@ const LeadCaptureForm: React.FC = () => {
   return (
     <div id='form' className="mx-auto border border-white rounded-xl text-[19px]">
       <form
-        className="lg:w-[65vh] w-[45vh] lg:h-[80vh] h-full max-h-[80vh] rounded-lg flex flex-col mx-auto"
+        className="lg:w-[65vh] min-w-[45vh] lg:h-[80vh] h-full max-h-[80vh] rounded-lg flex flex-col mx-auto"
         onSubmit={handleSubmit}
       >
         <input
