@@ -61,7 +61,7 @@ const LeadCaptureForm: React.FC = () => {
   return (
     <div id='form' className="mx-auto border border-white rounded-xl text-[19px]">
       <form
-        className="lg:w-[65vh] w-[45vh] lg:h-[80vh] h-[70vh] rounded-lg flex flex-col mx-auto"
+        className="lg:w-[65vh] w-[45vh] lg:h-[80vh] h-full max-h-[80vh] rounded-lg flex flex-col mx-auto"
         onSubmit={handleSubmit}
       >
         <input
@@ -121,7 +121,7 @@ const LeadCaptureForm: React.FC = () => {
         </select>
         <button
           type="submit"
-          className="font-semibold mx-10 mt-10 py-3 border border-white rounded-2xl text-center text-[18px] lg:text-[20px] hover:bg-white hover:text-orange-500 duration-500"
+          className="font-semibold mx-10 my-10 py-3 border border-white rounded-2xl text-center text-[18px] lg:text-[20px] hover:bg-white hover:text-orange-500 duration-500"
         >
           Aumentar minhas vendas
         </button>

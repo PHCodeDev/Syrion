@@ -108,10 +108,37 @@ export default function Home() {
       <section className='bg-cinza bg-no-repeat bg-cover flex min-h-screen '>
         <div className="w-[350px] lg:w-[1200px] 2xl:w-[1600px] mx-auto flex flex-col lg:flex-row justify-between mb-5">
 
-          <div className=" flex flex-col justify-center font-medium">
-            <p className="text-[27px] lg:text-[25px] my-3 text-center lg:text-left w-[330px] lg:w-[600px] 2xl:text-[30px] font-normal text-laranja">Você esta pronto para transformar sua presença online e <span className="underline">aumentar suas vendas?</span> </p>
-            <p className="text-[20px] lg:text-[23px] my-3 text-center lg:text-left w-[330px] lg:w-[600px] 2xl:text-[30px] font-light lg:font-normal text-branco mb-10 lg:mb-0 ">Preencha o formulário e um de nossos especialistas entrará em contato com você dentro de 8 horas.</p>
-          </div>
+        <div className="flex flex-col justify-center font-medium">
+  <p 
+    className="text-[27px] lg:text-[35px] my-3 text-center lg:text-left w-[330px] lg:w-[520px] 2xl:text-[30px] font-normal text-laranja" 
+    data-aos="fade-up"
+  >
+    Você está pronto para transformar sua presença online?
+  </p>
+  
+  <div 
+    className="my-10 border border-lg border-neutral-500 rounded-2xl p-4 bg-neutral-800 text-branco text-center lg:text-left" 
+    data-aos="fade-up" 
+    data-aos-delay="200" // Atraso na animação (opcional)
+  >
+    <p className="font-normal text-[23px] mb-3">1 Preencha o formulário</p>
+    <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[30px] font-light lg:font-normal mb-10 lg:mb-0">
+      Envie suas informações de contato. Todos os seus dados estarão seguros
+    </p>
+  </div>
+  
+  <div 
+    className="mb-10 border border-lg border-neutral-500 rounded-2xl p-4 bg-neutral-800 text-branco text-center lg:text-left" 
+    data-aos="fade-up" 
+    data-aos-delay="400" // Atraso na animação (opcional)
+  >
+    <p className="font-normal text-[23px] mb-3">2 Receba uma mensagem</p>
+    <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[30px] font-light lg:font-normal mb-10 lg:mb-0">
+      Um de nossos especialistas entrará em contato com você dentro de 12 horas, agendando uma reunião mais importante.
+    </p>
+  </div>
+</div>
+
 
           <div className="lg:w-[400px] flex items-center 3xl:w-[570px] text-white">
             <LeadCaptureForm/>
