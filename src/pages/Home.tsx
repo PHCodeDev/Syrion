@@ -2,7 +2,7 @@ import LeadCaptureForm from "./Form";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="scroll-smooth">
       
       <section className='bg-[url("https://i.ibb.co/6W0NKP4/se-o-1.png")] bg-no-repeat bg-cover flex h-[90vh] lg:h-[97vh]'>
         <div className="w-[350px] lg:w-[1200px] 2xl:w-[1600px] mx-auto flex justify-between">
@@ -17,6 +17,13 @@ export default function Home() {
             <a
               className="w-[13em] lg:w-[9em] text-center text-white p-2 lg:p-1 px-8 text-[25px] 2xl:text-[33px] lg:text-[18px] rounded-3xl hover:text-laranja duration-500 border border-branco"
               href="#pare"
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de adicionar o hash na URL
+                const target = document.getElementById('pare');
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' }); // Rolagem suave para o elemento
+                }
+              }}
             >
               SAIBA MAIS
             </a>
@@ -34,6 +41,13 @@ export default function Home() {
             <a
               className="w-[13em] lg:w-[9em] text-center text-white p-2 lg:p-2 px-10 lg:px-12 text-[25px] 2xl:text-[33px] lg:text-[18px] rounded-3xl hover:text-laranja lg:hover:py-3 lg:hover:px-14 duration-500 border border-branco"
               href="#porque"
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de adicionar o hash na URL
+                const target = document.getElementById('porque');
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' }); // Rolagem suave para o elemento
+                }
+              }}
             >
               SAIBA COMO
             </a>

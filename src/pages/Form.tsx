@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
+import { useNavigate } from 'react-router-dom';
 
 // Configuração do Supabase
 const supabaseUrl = 'https://ffqkqygvvbtotxnrlxkk.supabase.co';
@@ -24,6 +25,8 @@ const LeadCaptureForm: React.FC = () => {
     segmento: ''
   });
 
+  const navigate = useNavigate(); // Hook de navegação
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -43,7 +46,11 @@ const LeadCaptureForm: React.FC = () => {
       if (error) throw error;
 
       console.log('Lead capturado com sucesso:', data);
-      alert('Solicitação enviada com sucesso!');
+
+      // Redirecionar para a página de agradecimento
+      navigate('/Obrigado');
+
+      // Resetar o formulário
       setFormData({ nome: '', email: '', empresa: '', telefone: '', segmento: '' });
     } catch (error) {
       console.error('Erro ao enviar lead:', error);
@@ -52,7 +59,7 @@ const LeadCaptureForm: React.FC = () => {
   };
 
   return (
-    <div id='form' className="mx-auto border border-white rounded-xl text-[19px] ">
+    <div id='form' className="mx-auto border border-white rounded-xl text-[19px]">
       <form
         className="lg:w-[65vh] w-[45vh] lg:h-[80vh] h-[70vh] rounded-lg flex flex-col mx-auto"
         onSubmit={handleSubmit}
@@ -66,6 +73,7 @@ const LeadCaptureForm: React.FC = () => {
           required
         />
         <input
+          type="email" // Definindo o tipo como email para validação automática
           placeholder="Digite seu e-mail:"
           className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
           name="email"
@@ -96,20 +104,20 @@ const LeadCaptureForm: React.FC = () => {
           onChange={handleChange}
           required
         >
-          <option value="" className="">Qual é o seu segmento</option>
-          <option value="Startups e Empresas de Tecnologia" className="">Startups e Empresas de Tecnologia</option>
-          <option value="Saúde e Bem-estar" className="">Saúde e Bem-estar</option>
-          <option value="Educação e Cursos Online" className="">Educação e Cursos Online</option>
-          <option value="Food Service" className="">Food Service</option>
-          <option value="E-commerce" className="">E-commerce</option>
-          <option value="Indústria" className="">Indústria</option>
-          <option value="Varejo" className="">Varejo</option>
-          <option value="Serviços" className="">Serviços</option>
-          <option value="Imobiliária" className="">Imobiliária</option>
-          <option value="SAAS" className="">SAAS</option>
-          <option value="Finanças" className="">Finanças</option>
-          <option value="Energia Solar" className="">Energia Solar</option>
-          <option value="Outro" className="">Outro</option>
+          <option value="" disabled>Qual é o seu segmento</option>
+          <option value="Startups e Empresas de Tecnologia">Startups e Empresas de Tecnologia</option>
+          <option value="Saúde e Bem-estar">Saúde e Bem-estar</option>
+          <option value="Educação e Cursos Online">Educação e Cursos Online</option>
+          <option value="Food Service">Food Service</option>
+          <option value="E-commerce">E-commerce</option>
+          <option value="Indústria">Indústria</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Serviços">Serviços</option>
+          <option value="Imobiliária">Imobiliária</option>
+          <option value="SAAS">SAAS</option>
+          <option value="Finanças">Finanças</option>
+          <option value="Energia Solar">Energia Solar</option>
+          <option value="Outro">Outro</option>
         </select>
         <button
           type="submit"
