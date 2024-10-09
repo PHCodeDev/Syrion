@@ -66,7 +66,7 @@ const LeadCaptureForm: React.FC = () => {
       >
         <input
           placeholder="Digite seu nome:"
-          className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl mt-[5vh] mb-[2vh]"
+          className="bg-white text-[18px] text-black min-w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl mt-[5vh] mb-[2vh]"
           name="nome"
           value={formData.nome}
           onChange={handleChange}
@@ -75,7 +75,7 @@ const LeadCaptureForm: React.FC = () => {
         <input
           type="email" // Definindo o tipo como email para validação automática
           placeholder="Digite seu e-mail:"
-          className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
+          className="bg-white text-[18px] text-black min-w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
           name="email"
           value={formData.email}
           onChange={handleChange}
@@ -83,7 +83,7 @@ const LeadCaptureForm: React.FC = () => {
         />
         <input
           placeholder="Digite o nome da sua empresa:"
-          className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
+          className="bg-white text-[18px] text-black min-w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
           name="empresa"
           value={formData.empresa}
           onChange={handleChange}
@@ -91,14 +91,14 @@ const LeadCaptureForm: React.FC = () => {
         />
         <input
           placeholder="Digite seu telefone:"
-          className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
+          className="bg-white text-[18px] text-black min-w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
           name="telefone"
           value={formData.telefone}
           onChange={handleChange}
           required
         />
         <select
-          className="bg-white text-[18px] text-black w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
+          className="bg-white text-[18px] text-black min-w-[37vh] lg:w-[55vh] p-2 h-[46px] mx-auto rounded-xl my-[2vh]"
           name="segmento"
           value={formData.segmento}
           onChange={handleChange}
