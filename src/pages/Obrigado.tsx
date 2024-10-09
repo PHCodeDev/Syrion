@@ -1,4 +1,4 @@
-const Thanks = () => {
+const Obrigado = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-cinza">
       <div>
@@ -39,4 +39,4 @@ const Thanks = () => {
   );
 };
 
-export default Thanks;
+export default Obrigado;
