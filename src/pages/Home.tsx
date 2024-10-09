@@ -42,7 +42,7 @@ export default function Home() {
               className="text-[27px] lg:text-[35px] my-3 text-center lg:text-left w-[330px] lg:w-[520px] 2xl:text-[30px] font-normal text-laranja"
               data-aos="fade-up"
             >
-              Você está pronto para transformar sua presença online?
+              Siga os seguintes passos para aumentar suas vendas:
             </p>
 
             <div
@@ -50,10 +50,10 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="200" // Atraso na animação (opcional)
             >
-              <p className="font-normal text-[23px] mb-3">
+              <p className="font-normal text-[23px] 2xl:text-[26px] mb-3">
                 1 Preencha o formulário
               </p>
-              <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[30px] font-light lg:font-normal mb-10 lg:mb-0">
+              <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[24px] font-light lg:font-normal mb-10 lg:mb-0">
                 Envie suas informações de contato. Todos os seus dados estarão
                 seguros
               </p>
@@ -64,10 +64,10 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="400" // Atraso na animação (opcional)
             >
-              <p className="font-normal text-[23px] mb-3">
+              <p className="font-normal text-[23px] 2xl:text-[26px] mb-3">
                 2 Receba uma mensagem
               </p>
-              <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[30px] font-light lg:font-normal mb-10 lg:mb-0">
+              <p className="text-[20px] lg:text-[18px] w-[320px] lg:w-[450px] 2xl:text-[24px] font-light lg:font-normal mb-10 lg:mb-0">
                 Um de nossos especialistas entrará em contato com você dentro de
                 12 horas, agendando uma reunião mais importante.
               </p>
