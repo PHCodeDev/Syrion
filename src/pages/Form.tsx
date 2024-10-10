@@ -139,7 +139,7 @@ const LeadCaptureForm: React.FC = () => {
         </select>
         <button
           type="submit"
-          className="font-semibold mx-10 mt-2 lg:mt-8 mb-10 py-3 border border-white rounded-2xl text-center text-[18px] lg:text-[20px] hover:bg-white hover:text-orange-500 duration-500"
+          className="font-semibold mx-10 mt-2 lg:mt-8 mb-10 py-3 border border-white rounded-2xl text-center text-[18px] lg:text-[20px] hover:bg-white hover:text-cinza duration-500"
         >
           Aumentar minhas vendas
         </button>

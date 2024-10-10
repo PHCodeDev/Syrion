@@ -3,23 +3,34 @@ import LeadCaptureForm from "./Form";
 export default function Home() {
   return (
     <div className="scroll-smooth">
-      <section className='bg-[url("https://i.ibb.co/6W0NKP4/se-o-1.png")] bg-no-repeat bg-cover flex h-[90vh] lg:h-[97vh]'>
-        <div className="w-[350px] lg:w-[1200px] 2xl:w-[1600px] mx-auto flex justify-between">
-          <div className="flex flex-col justify-center text-white w-[36em] text-center lg:text-left items-center lg:items-start">
-            <img
-              className="mb-4 lg:mb-16 h-20 lg:h-14"
-              src="https://i.ibb.co/5Gb3TKr/Logo.png"
-              alt="Logo da syrion"
-            />
-            <h1 className="font-bold mb-4 lg:leading-[60px] text-[29px] lg:text-[47px] 2xl:text-[50px] text-laranja">
-              Aumente Suas Vendas com Estratégias de Marketing Personalizadas
+      <section className='bg-[url("https://i.ibb.co/hBPBXRC/Rectangle-192.png")] bg-no-repeat bg-cover flex h-[90vh] lg:h-[97vh]'>
+        <div className="w-[350px] lg:w-[1000px] 2xl:w-[1600px] mx-auto flex ">
+          <div className="flex flex-col justify-center text-white mx-auto text-center items-center">
+            <a
+              href="https://syrion.com.br/"
+            >
+              <img
+                className="mx-auto mb-5 lg:mb-4 h-16 lg:h-14 transition-transform duration-300 ease-in-out transform hover:scale-105"
+                src="https://i.ibb.co/5Gb3TKr/Logo.png"
+                alt="Logo da syrion"
+              />
+            </a>
+
+            <h1
+              className="font-medium mb-4 lg:leading-[75px] text-[35px] lg:text-[70px] 2xl:text-[50px] text-laranja lg:w-[700px]"
+              style={{ textShadow: "3px 3px 5px rgba(0, 0, 0, 0.8)" }}
+            >
+              Pronto Para Ver Suas Vendas{" "}
+              <span className="text-branco">Dispararem?</span>
             </h1>
-            <p className="lg:mb-4 mb-6 text-[18px] lg:text-[25px] 2xl:text-[25px]">
-              Transformamos Suas Ideias em Resultados com Estratégias de
-              Conversão.
+            <div className="bg-laranja w-24 h-1 lg:h-1 mb-4 lg:mt-2 mr-2"></div>
+            <p className="lg:mb-4 mb-6 text-[16px] lg:text-[20px] 2xl:text-[25px] w-[320px] lg:w-[600px]">
+              Em 20 minutos vamos te mostrar tudo que está impedindo sua empresa
+              de aumentar o faturamento e montar um plano de ação prático para
+              você vender muito mais
             </p>
             <a
-              className="w-[13em] lg:w-[16em] text-center text-white p-2 lg:p-1 px-8 text-[18px] 2xl:text-[33px] lg:text-[18px] rounded-xl hover:text-laranja duration-500 border border-branco"
+              className="w-[17em] lg:w-[20em] text-center text-branco p-2 lg:p-3 text-[18px] 2xl:text-[33px] font-semibold lg:text-[18px] rounded-xl hover:text-black duration-500 hover:bg-branco border"
               href="#pare"
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de adicionar o hash na URL
@@ -35,7 +46,10 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-laranja h-[10px]"></section>
-      <section className="bg-cinza bg-no-repeat bg-cover flex min-h-screen pt-10 lg:pt-0" id="form">
+      <section
+        className="bg-cinza bg-no-repeat bg-cover flex min-h-screen pt-10 lg:pt-0"
+        id="form"
+      >
         <div className="w-[350px] lg:w-[1200px] 2xl:w-[1600px] mx-auto flex flex-col lg:flex-row justify-between mb-5">
           <div className="flex flex-col justify-center font-medium">
             <p
@@ -100,10 +114,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="bg-cinza bg-no-repeat bg-cover flex min-h-screen pb-3 lg:pb-0"
-        
-      >
+      <section className="bg-cinza bg-no-repeat bg-cover flex min-h-screen pb-3 lg:pb-0">
         <div className="w-[350px] lg:w-[1200px] 2xl:w-[1600px] mx-auto flex flex-col lg:flex-row justify-between mb-5">
           <div className=" flex flex-col justify-center font-medium">
             <p className="text-[30px] my-4 lg:text-[40px] w-[330px] lg:w-[600px] 2xl:text-[30px] text-laranja leading-[50px]">
@@ -183,7 +194,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
 
       <footer className="bg-black h-[160px] lg:h-[120px]">
         <img
